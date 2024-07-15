@@ -3,6 +3,14 @@ import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.ts'
 
+let a: number = 4;
+console.log(a)
+a = 48
+console.log(a)
+
+let str: string = 'kam'
+console.log(str)
+
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
