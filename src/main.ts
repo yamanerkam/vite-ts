@@ -26,11 +26,16 @@ dateArray.push(newDate)
 console.log(dateArray)
 
 
+let xyz: any;
+xyz = '3'
 
+const res = fetch('https://jsonplaceholder.typicode.com/todos/1').then(response => response.json).then(data => { data })
+console.log(res)
 
-
-
-
+const person: { name: string, experience: number, isProgrammer?: boolean } = { name: 'kam', experience: 3 }
+console.log(person)
+person.isProgrammer = true
+console.log(person)
 
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
