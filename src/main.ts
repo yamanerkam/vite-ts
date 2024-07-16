@@ -37,7 +37,7 @@ console.log(person)
 person.isProgrammer = true
 console.log(person)
 
-type student = {
+type Student = {
   name: string,
   gpa: number,
   isRich?: boolean
@@ -48,7 +48,7 @@ type student = {
   }
 }
 
-const student1: student = {
+const student1: Student = {
   name: 'kseniia',
   gpa: 2.9,
   friends: ['kam', 'messi'],
@@ -58,7 +58,7 @@ const student1: student = {
   }
 }
 
-const student2: student = {
+const student2: Student = {
   name: 'kam',
   gpa: 2.3,
   friends: ['kseniia', 'messi'],
@@ -68,8 +68,32 @@ const student2: student = {
   }
 }
 
-console.log(student1)
+console.log(student1, student2)
+// only objects
+interface Teacher {
+  name: string,
+  exp: number,
+  isRich?: boolean
+  friends: string[],
+  address: {
+    street: string,
+    no: number
+  }
+}
 
+const teacher1: Teacher = {
+  name: 'kamT',
+  exp: 44,
+  isRich: true,
+  friends: [],
+  address: {
+    street: 's',
+    no: 3
+  }
+}
+
+
+console.log(teacher1)
 
 
 
