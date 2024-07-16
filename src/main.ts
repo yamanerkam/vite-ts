@@ -11,6 +11,22 @@ console.log(a)
 let str: string = 'kam'
 console.log(str)
 
+let arrayOfNumbers = [1, 2, 3]
+console.log(arrayOfNumbers)
+
+const numbers: number[] = [1, 4, 5]
+console.log(numbers)
+numbers.push(6)
+console.log(numbers)
+
+
+
+
+
+
+
+
+
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
