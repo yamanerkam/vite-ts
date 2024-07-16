@@ -37,6 +37,17 @@ console.log(person)
 person.isProgrammer = true
 console.log(person)
 
+type student = { name: string, gpa: number, isRich?: boolean }
+
+const student1: student = {
+  name: 'kseniia',
+  gpa: 2.9
+}
+
+console.log(student1)
+
+
+
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
