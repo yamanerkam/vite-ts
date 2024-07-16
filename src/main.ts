@@ -37,11 +37,35 @@ console.log(person)
 person.isProgrammer = true
 console.log(person)
 
-type student = { name: string, gpa: number, isRich?: boolean }
+type student = {
+  name: string,
+  gpa: number,
+  isRich?: boolean
+  friends: string[],
+  address: {
+    street: string,
+    no: number
+  }
+}
 
 const student1: student = {
   name: 'kseniia',
-  gpa: 2.9
+  gpa: 2.9,
+  friends: ['kam', 'messi'],
+  address: {
+    street: 'abc',
+    no: 35
+  }
+}
+
+const student2: student = {
+  name: 'kam',
+  gpa: 2.3,
+  friends: ['kseniia', 'messi'],
+  address: {
+    street: 'abc',
+    no: 35
+  }
 }
 
 console.log(student1)
