@@ -2,6 +2,7 @@ import './style.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.ts'
+const newDate = new Date();
 
 let a: number = 4;
 console.log(a)
@@ -18,6 +19,11 @@ const numbers: number[] = [1, 4, 5]
 console.log(numbers)
 numbers.push(6)
 console.log(numbers)
+
+const dateArray: Date[] = [new Date()];
+console.log(newDate)
+dateArray.push(newDate)
+console.log(dateArray)
 
 
 
