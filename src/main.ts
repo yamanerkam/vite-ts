@@ -110,6 +110,11 @@ function sumNumbers(a: number, b: number) {
   return a + b
 }
 
+function studentInfo(student: Student) {
+  return student
+}
+const studentX = studentInfo(student2)
+console.log(studentX)
 const c = sumNumbers(10, 30)
 console.log(c)
 
