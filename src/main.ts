@@ -123,8 +123,15 @@ function optionalParameters(name: string, options?: { debugMode: boolean }) {
 }
 
 optionalParameters('kseniia', { debugMode: true })
+type Option = {
+  debugMode?: boolean,
+  logLevel?: number
+}
+function op2(name: string, { debugMode = false, logLevel }: Option = {}) {
+  console.log(name, debugMode, logLevel)
+}
 
-
+op2('kam', { debugMode: true, logLevel: 3 })
 
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
