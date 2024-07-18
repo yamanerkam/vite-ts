@@ -96,6 +96,25 @@ const teacher1: Teacher = {
 console.log(teacher1)
 
 
+// functions
+
+
+
+function printName(name: string) {
+  console.log(name)
+}
+
+printName('kam')
+
+function sumNumbers(a: number, b: number) {
+  return a + b
+}
+
+const c = sumNumbers(10, 30)
+console.log(c)
+
+
+
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
