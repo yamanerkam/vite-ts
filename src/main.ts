@@ -118,6 +118,12 @@ console.log(studentX)
 const c = sumNumbers(10, 30)
 console.log(c)
 
+function optionalParameters(name: string, options?: { debugMode: boolean }) {
+  console.log(name, options)
+}
+
+optionalParameters('kseniia', { debugMode: true })
+
 
 
 
