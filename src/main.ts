@@ -133,6 +133,14 @@ function op2(name: string, { debugMode = false, logLevel }: Option = {}) {
 
 op2('kam', { debugMode: true, logLevel: 3 })
 
+function restOperator(...nums: number[]) {
+  let summ: number = 0;
+  nums.forEach(num => {
+    summ += num;
+  })
+  console.log(summ)
+}
+restOperator(1, 34, 53, 5, 8)
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
